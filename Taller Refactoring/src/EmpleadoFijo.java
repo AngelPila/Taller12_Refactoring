@@ -6,7 +6,7 @@ public class EmpleadoFijo extends Empleado {
         this.bonoAnual = bonoAnual;
     }
 
-    public void imprimirDetalles() {
+    public void imprimirDetallesFijo() {
         imprimirDetalles();
         System.out.println("bonoAnual: " + bonoAnual);
     }

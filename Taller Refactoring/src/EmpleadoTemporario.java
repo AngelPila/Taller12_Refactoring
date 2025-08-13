@@ -6,7 +6,7 @@ public class EmpleadoTemporario extends Empleado {
         this.mesesContrato = mesesContrato;
     }
 
-    public void imprimirDetalles() {
+    public void imprimirDetallesTemporario() {
         imprimirDetalles();
         System.out.println("Meses de contrato: " + mesesContrato);
     }

@@ -8,7 +8,7 @@ public class EmpleadoPorHoras extends Empleado {
         super.setSalarioBase(calcularSalario());
     }
 
-    public void imprimirDetalles() {
+    public void imprimirDetallesPorHora() {
         imprimirDetalles();
     }
 

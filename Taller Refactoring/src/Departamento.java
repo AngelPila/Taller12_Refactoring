@@ -4,4 +4,9 @@ public abstract class Departamento {
     public int getComplementoSalarial() {
         return this.complementoSalarial;
     }
+
+    public String toString(){
+        return getClass().getSimpleName();
+
+    }
 }
