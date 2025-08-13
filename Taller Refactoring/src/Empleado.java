@@ -4,15 +4,23 @@ public class Empleado {
     private int horasTrabajadas;
     private String departamento;
     private double tarifaHora;
+    private String genero;
 
-    public Empleado(){}
-    public Empleado(String nombre, double salarioBase, int horasTrabajadas, double tarifaHora, String departamento) {
+    public Empleado(){
+        
+
+
+    }
+    public Empleado(String nombre, double salarioBase, int horasTrabajadas, double tarifaHora, String departamento, String genero) {
         this.nombre = nombre;
         this.salarioBase = salarioBase;
         this.horasTrabajadas = horasTrabajadas;
         this.tarifaHora = tarifaHora;
         this.departamento = departamento;
+        this.genero = genero;
     }
+
+
 
     public double calcularSalario() {
         double salarioTotal = salarioBase;
@@ -81,5 +89,13 @@ public class Empleado {
         this.departamento = departamento;
     }
 
-    // Más metodos
+    public void imprimirDetalles(){
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Genero: " + genero);
+        System.out.println("Salario: " + salarioBase);
+        System.out.println("Horas trabajadas: " + horasTrabajadas);
+        System.out.println("Departamento: " + departamento);
+
+
+    }
 }
