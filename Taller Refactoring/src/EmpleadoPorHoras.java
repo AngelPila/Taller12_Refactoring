@@ -1,7 +1,10 @@
 public class EmpleadoPorHoras extends Empleado {
+    private double tarifaHora;
 
-    public EmpleadoPorHoras(String nombre, int horasTrabajadas, double tarifaHora, String departamento, String genero) {
-        super(nombre, 0, horasTrabajadas, tarifaHora, departamento, genero);
+
+    public EmpleadoPorHoras(String nombre, int horasTrabajadas, double tarifaHora, Departamento departamento, String genero) {
+        super(nombre, 0, horasTrabajadas, departamento, genero);
+        this.tarifaHora = tarifaHora;
         super.setSalarioBase(calcularSalario());
     }
 
@@ -11,7 +14,7 @@ public class EmpleadoPorHoras extends Empleado {
 
     @Override
     public double calcularSalario() {
-        return super.getHorasTrabajadas() * super.getTarifaHora();
+        return super.getHorasTrabajadas() * tarifaHora;
     }
 
     // Más metodos
